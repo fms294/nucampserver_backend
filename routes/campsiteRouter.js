@@ -214,7 +214,6 @@ campsiteRouter.route('/:campsiteId/comments/:commentId')
      .catch(err => next(err));
 
 })
-
 .delete(cors.corsWithOptions,authenticate.verifyUser,authenticate.verifyAdmin,(req, res, next) => {
     Campsite.findById(req.params.campsiteId)
      .then(campsite =>{
