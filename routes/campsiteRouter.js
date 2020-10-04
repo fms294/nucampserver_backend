@@ -7,7 +7,7 @@ const campsiteRouter = express.Router();
 
 campsiteRouter.use(bodyParser.json());
 const Campsite = require('../models/campsite');
-const { response } = require('../app');
+const {response } = require('../app');
 
 
 campsiteRouter.route('/')
